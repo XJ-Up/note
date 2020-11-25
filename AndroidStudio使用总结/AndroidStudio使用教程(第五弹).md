@@ -38,11 +38,11 @@ dependencies {
 
 ### Build the project in Android Studio
 `Android Studio`中`build project`点击上面导航栏中的`Build`菜单然后选择`Make Project`, 这时窗口底部的状态栏就会显示`build`的进度。       
-点击窗口右边底部的![Image](https://github.com/CharonChui/Pictures/blob/master/AndroidStudio_5_2.png)图标来显示`Gradle Console`.      
-![Image](https://github.com/CharonChui/Pictures/blob/master/AndroidStudio_5_3.png?raw=true)
+点击窗口右边底部的![](https://gitee.com/xj36/chart-bed-test/raw/master/static/AndroidStudio_5_2.png)图标来显示`Gradle Console`.      
+![AndroidStudio_5_3](https://gitee.com/xj36/chart-bed-test/raw/master/static/AndroidStudio_5_3.png)
 
 在窗口右边栏点击`Gradle`窗口可以看到当前所有可用的`build tasks`, 双击里面的`task`即可执行。      
-![Image](https://github.com/CharonChui/Pictures/blob/master/AndroidStudio_5_4.png?raw=true)
+![AndroidStudio_5_4](https://gitee.com/xj36/chart-bed-test/raw/master/static/AndroidStudio_5_4.png)
 
 ### Build a release version
 点击`Gradle tasks`页面， 展开`app`中的`task`然后双击`assembleRelease`即可。 
@@ -100,7 +100,7 @@ dependencies {
 `dependencies`部分是在`android`之外，该部分声明了依赖的`module`。     
 **注意：**当修改项目中得`build files`时，`Android Studio`需要进行项目同步来导入相应的`build`配置变化， 点击`Android Studio`中黄色通知部分的`Sync Now`
 来进行变化的导入。               
-![Image](https://github.com/CharonChui/Pictures/blob/master/AndroidStudio_5_5.png)     
+![AndroidStudio_5_5](https://gitee.com/xj36/chart-bed-test/raw/master/static/AndroidStudio_5_5.png)
 
 ###Declare dependencies
 ```java
@@ -170,7 +170,7 @@ android {
         }
     }
     ... 
-    ```   
+    ```
 
 - 在`Android Studio`中的`build task`页面运行`assembleRelease`。 
 在`app/build/apk/app-release.apk`下的包现在就是使用签名文件签过名的了。     
@@ -179,7 +179,4 @@ android {
 至于开始所说利用`Gradle`可以很简单的进行多渠道打包会在以后专门讲解， 这里先到此为止了。 	
 	                  
 		
----
 
-- 邮箱 ：charon.chui@gmail.com  
-- Good Luck! 

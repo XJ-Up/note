@@ -10,7 +10,6 @@ AndroidStudio中进行ndk开发
     }
 	```
 	
-	
 - 生成`class`文件。                 
     执行`Build-Make Project`命令，生成`class`文件。所在目录为`app_path/build/intermediates/classes/debug`
 
@@ -31,7 +30,7 @@ AndroidStudio中进行ndk开发
 	  -classpath <path>        从中加载类的路径
 	  -cp <path>               从中加载类的路径
 	  -bootclasspath <path>    从中加载引导类的路径
-	```	
+	```
 	在`Studio Terminal`中进入到`src/main`目录下执行`javah`命令:       
 	`javah -d jni -classpath <SDK_android.jar>;<APP_classes> <class>`
 	
@@ -43,7 +42,7 @@ AndroidStudio中进行ndk开发
 
 
 - 配置`ndk`路径，在项目右键`Moudle Setting`中设置。              
-    ![image](https://raw.githubusercontent.com/CharonChui/Pictures/master/studio_ndk_jni.png?raw=true)    
+    ![studio_ndk_jni](https://gitee.com/xj36/chart-bed-test/raw/master/static/studio_ndk_jni.png)
 	
 - 在`build.gradle`中配置`ndk`选项              
 
@@ -82,9 +81,6 @@ AndroidStudio中进行ndk开发
 	
 - 执行Build      
 	然后就可以在`app/build/intermediates/ndk/debug/obj/local`下看到所有架构的`so`了。
-    ![image](https://raw.githubusercontent.com/CharonChui/Pictures/master/studio_ndk_build.png?raw=true)    
+  ![studio_ndk_build](https://gitee.com/xj36/chart-bed-test/raw/master/static/studio_ndk_build.png)
 	
----
 
-- 邮箱 ：charon.chui@gmail.com  
-- Good Luck! 

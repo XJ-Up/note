@@ -159,7 +159,7 @@ repositories {
 
 
 ```
-	            
+
 
 下面来详细讲几个地方:
 
@@ -326,7 +326,7 @@ repositories {
 }
 
 上面`build.gradle`中的配置基本就是这些，那么`manifest`中的清单文件该如何对`umeng`渠道进行修改呢？ 
-```xml
+​```xml
     <application
         android:allowBackup="true"
         android:name=".application.RetailApplication"
@@ -351,7 +351,7 @@ repositories {
             android:value="${UMENG_CHANNEL_VALUE}" />
     </application>
 ```
-				
+
 上面讲解了如何进行多渠道打包。还剩下一个问题，就是`Log`开关的问题。这就要用到`BuildConfig.DEBUG`。 `Gradle`脚本默认有`debug`和`release`两种模式，对应的`BuildCondig.DEBUG`字段分别为`true`和`false`，而且不可更改。该字段编译后自动生成，在`app/build/source/BuildConfig/Build Varients/package name/BuildConfig`文件中。所以我们可以在`LogUtil`中这样配置。
 ```java
 public class LogUtil {
@@ -369,7 +369,7 @@ public class LogUtil {
     ...
 }
 ```
-			
+
 这里再多提一句，就是如果我们不想使用`BuildConfig.DEBUG`，想额外的使用一些其他的配置该如何操作呢？
 可以在`gradle`文件中的`buildTypes`中进行添加。
 ```xml
@@ -405,10 +405,5 @@ buildTypes {
 
 最后附上一张`Build`流程图: 
 
-![Image](https://raw.githubusercontent.com/CharonChui/Pictures/master/build.png?raw=true)	
+![build](https://gitee.com/xj36/chart-bed-test/raw/master/static/build.png)
 
-	
----
-
-- 邮箱 ：charon.chui@gmail.com  
-- Good Luck! 
